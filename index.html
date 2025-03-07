@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h2>User Form</h2>
+        <form id="userForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" required />
+            <br /><br />
+
+            <label for="age">Age:</label>
+            <select id="age" required>
+                <option value="" disabled selected>Select</option>
+                <option value="18">18</option>
+                <option value="19">19</option>
+                <option value="20">20</option>
+                <option value="21">21</option>
+            </select>
+            <br /><br />
+
+            <label>Gender:</label>
+            <input type="radio" name="gender" value="Male" id="male" />
+            <label for="male">Male</label>
+            <input type="radio" name="gender" value="Female" id="female" />
+            <label for="female">Female</label>
+            <br /><br />
+
+            <button type="button" onclick="showLogin()">Submit</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
